@@ -1,0 +1,72 @@
+** Drc report for Dual_Rail_Power_Supply.kicad_pcb **
+** Created on 2026-11-22T20:10:46 **
+** Report includes: Errors, Warnings **
+
+** Found 13 DRC violations **
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(29.0000 mm, 38.0000 mm): Track [+VIN] on F.Cu, length 20.1600 mm
+    @(24.5400 mm, 48.0000 mm): Track [+VOUT_ADJ] on F.Cu, length 4.4600 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(24.5400 mm, 33.0000 mm): Track [+VOUT_ADJ] on F.Cu, length 17.4600 mm
+    @(27.0800 mm, 25.0000 mm): Track [+VIN] on F.Cu, length 13.0000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(24.5400 mm, 48.0000 mm): Track [+VOUT_ADJ] on F.Cu, length 9.5400 mm
+    @(17.0000 mm, 38.0000 mm): Track [V_ADJ_PIN] on F.Cu, length 20.1600 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(24.5400 mm, 38.0000 mm): Track [+VOUT_ADJ] on F.Cu, length 10.0000 mm
+    @(22.0000 mm, 42.0000 mm): Track [V_ADJ_PIN] on F.Cu, length 27.6200 mm
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(58.0000 mm, 38.0000 mm): Footprint RV1
+    @(42.0000 mm, 38.0000 mm): Footprint R1
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(22.0000 mm, 38.0000 mm): Footprint U1
+    @(29.0000 mm, 48.0000 mm): Footprint D2
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(29.0000 mm, 37.8400 mm): PTH pad 2 [+VIN] of D2
+    @(22.0000 mm, 38.0000 mm): Footprint U1
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(27.0800 mm, 38.0000 mm): PTH pad 3 [+VIN] of U1
+    @(29.0000 mm, 48.0000 mm): Footprint D2
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(29.0000 mm, 38.0000 mm): Track [+VIN] on F.Cu, length 20.1600 mm
+    @(29.0000 mm, 48.0000 mm): PTH pad 1 [+VOUT_ADJ] of D2
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(29.0000 mm, 38.0000 mm): Track [+VIN] on F.Cu, length 20.1600 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(17.0000 mm, 58.1600 mm): Track [V_ADJ_PIN] on F.Cu, length 2.0000 mm
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; warning
+    @(29.6500 mm, 39.3600 mm): Segment of U1 on F.Silkscreen
+    @(29.0000 mm, 39.1800 mm): Segment of D2 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(29.6500 mm, 34.7400 mm): Segment of U1 on F.Silkscreen
+    @(29.0000 mm, 37.8400 mm): PTH pad 2 [+VIN] of D2
+
+** Found 1 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(15.0000 mm, 37.8400 mm): PTH pad 2 [V_ADJ_PIN] of D3
+    @(17.0000 mm, 38.0000 mm): Track [V_ADJ_PIN] on F.Cu, length 20.1600 mm
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **
